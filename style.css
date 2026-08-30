@@ -1,0 +1,73 @@
+body {
+  margin: 0;
+
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+
+  background: #222;
+
+  font-family: Georgia, serif;
+}
+
+/*LE LIVRE*/
+
+.livre {
+  display: flex;
+
+  width: 800px;
+  height: 500px;
+
+  perspective: 1000px;
+}
+
+/*LES PAGES*/
+
+.page {
+  flex: 0 0 400px;
+
+  width: 50%;
+  height: 100%;
+
+  box-sizing: border-box;
+
+  padding: 40px;
+
+  background: #f3e3bd;
+
+  color: #3b2818;
+
+  box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.2);
+}
+
+/*PAGE GAUCHE*/
+.gauche {
+  border-radius: 10px 0 0 10px;
+}
+
+/*PAGE DROITE*/
+.droite {
+  border-radius: 0 10px 10px 0;
+}
+
+/*TEXTE*/
+.page h1,
+.page h2 {
+  text-align: center;
+}
+
+/*BOUTONS*/
+
+.boutons {
+  margin-top: 30px;
+}
+.button {
+  padding: 12px 20px;
+  margin: 0 10px;
+  cursor: pointer;
+  font-size: 16px;
+}
