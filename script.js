@@ -1,10 +1,12 @@
 const boutonSuivant = document.querySelector("#suivant");
 const boutonPrecedent = document.querySelector("#precedent");
 
+const pageDroite = document.querySelector(".droite");
+
 boutonSuivant.addEventListener("click", () => {
-  console.log("Le joueur tourne la page !");
+  pageDroite.classList.add("tourner");
 });
 
 boutonPrecedent.addEventListener("click", () => {
-  console.log("Le joueur revient en arriere !");
+  pageDroite.classList.remove("tourner");
 });
